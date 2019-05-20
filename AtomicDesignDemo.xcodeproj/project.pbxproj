@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5D294BAC777CD73F1E31B1 /* Pods_AtomicDesignDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E10885565A395E3CB9C1E18 /* Pods_AtomicDesignDemo.framework */; };
 		B0BE15622292F5F000F00293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE15612292F5F000F00293 /* AppDelegate.swift */; };
 		B0BE15642292F5F000F00293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE15632292F5F000F00293 /* ViewController.swift */; };
 		B0BE15672292F5F000F00293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BE15652292F5F000F00293 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E10885565A395E3CB9C1E18 /* Pods_AtomicDesignDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtomicDesignDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B4E5D74723C625235E0167 /* Pods-AtomicDesignDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomicDesignDemo.release.xcconfig"; path = "Target Support Files/Pods-AtomicDesignDemo/Pods-AtomicDesignDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A88BC2DAE92369319796617F /* Pods-AtomicDesignDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomicDesignDemo.debug.xcconfig"; path = "Target Support Files/Pods-AtomicDesignDemo/Pods-AtomicDesignDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B0BE155E2292F5F000F00293 /* AtomicDesignDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomicDesignDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BE15612292F5F000F00293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BE15632292F5F000F00293 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5D294BAC777CD73F1E31B1 /* Pods_AtomicDesignDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B52965D30A775CA2D41CED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A88BC2DAE92369319796617F /* Pods-AtomicDesignDemo.debug.xcconfig */,
+				A0B4E5D74723C625235E0167 /* Pods-AtomicDesignDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B0BE15552292F5F000F00293 = {
 			isa = PBXGroup;
 			children = (
 				B0BE15602292F5F000F00293 /* AtomicDesignDemo */,
 				B0BE155F2292F5F000F00293 /* Products */,
+				37B52965D30A775CA2D41CED /* Pods */,
+				FAF96B9CA737FA0370E1EDF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +70,9 @@
 		B0BE15602292F5F000F00293 /* AtomicDesignDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B0BE15732292F76300F00293 /* Atomos */,
+				B0BE15742292F76F00F00293 /* Moleculas */,
+				B0BE15752292F77E00F00293 /* Organismos */,
 				B0BE15612292F5F000F00293 /* AppDelegate.swift */,
 				B0BE15632292F5F000F00293 /* ViewController.swift */,
 				B0BE15652292F5F000F00293 /* Main.storyboard */,
@@ -64,6 +83,35 @@
 			path = AtomicDesignDemo;
 			sourceTree = "<group>";
 		};
+		B0BE15732292F76300F00293 /* Atomos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Atomos;
+			sourceTree = "<group>";
+		};
+		B0BE15742292F76F00F00293 /* Moleculas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Moleculas;
+			sourceTree = "<group>";
+		};
+		B0BE15752292F77E00F00293 /* Organismos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Organismos;
+			sourceTree = "<group>";
+		};
+		FAF96B9CA737FA0370E1EDF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E10885565A395E3CB9C1E18 /* Pods_AtomicDesignDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0BE15702292F5F100F00293 /* Build configuration list for PBXNativeTarget "AtomicDesignDemo" */;
 			buildPhases = (
+				2C92E080A4084C9BFABCC84C /* [CP] Check Pods Manifest.lock */,
 				B0BE155A2292F5F000F00293 /* Sources */,
 				B0BE155B2292F5F000F00293 /* Frameworks */,
 				B0BE155C2292F5F000F00293 /* Resources */,
@@ -129,6 +178,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C92E080A4084C9BFABCC84C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtomicDesignDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0BE155A2292F5F000F00293 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		B0BE15712292F5F100F00293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88BC2DAE92369319796617F /* Pods-AtomicDesignDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		B0BE15722292F5F100F00293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B4E5D74723C625235E0167 /* Pods-AtomicDesignDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
